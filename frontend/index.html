@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Scraper</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>🛒 Amazon Product Scraper</h1>
+        <p>Extraia informações de produtos da Amazon por palavra-chave</p>
+      </header>
+      
+      <main>
+        <div class="search-container">
+          <div class="input-group">
+            <input 
+              type="text" 
+              id="keyword-input" 
+              placeholder="Digite a palavra-chave (ex: smartphone, notebook...)" 
+              autocomplete="off"
+            />
+            <button id="search-btn" type="button">
+              <span class="btn-text">Buscar Produtos</span>
+              <span class="loading-spinner" style="display: none;">🔄</span>
+            </button>
+          </div>
+        </div>
+        
+        <div id="error-message" class="error-message" style="display: none;"></div>
+        
+        <div id="results-container" class="results-container" style="display: none;">
+          <h2>Resultados da Pesquisa</h2>
+          <div id="products-grid" class="products-grid"></div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
