@@ -44,6 +44,12 @@ npm run dev
 
 O frontend estará disponível em `http://localhost:5173`
 
+### Acesso rápido
+
+- **API Backend**: http://localhost:3000 (documentação da API)
+- **Frontend**: http://localhost:5173 (interface web)
+- **Endpoint de scraping**: http://localhost:3000/api/scrape?keyword=mouse
+
 ## API Endpoints
 
 ### GET /api/scrape
